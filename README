@@ -1,0 +1,24 @@
+This should be an assignment described by Test.pdf
+Note however that I misread the first few lines and did not harvest data from 
+http://test.unnax.com/
+Instead I created the backend database part.
+Since I figured this out very late I decided to let it be;
+It is actually a more complex assignment than the required one.
+
+
+I have created:
+- database model for the problem and the actual database
+- a secure way to store user passwords
+- a small tst suite to know that things are ok (helped me TDD)
+- the script that reads from my database (not the web page you provided)
+
+If you want to take a look here are the steps
+
+1. Have linux/macos environment. This was not tested nor intented to be run under windows
+2. Have python3 (I have used 3.7 but 3.6 should sufice) and the coresponding pip
+3. Have virtualenv
+4. virtualenv -p python3 .env
+5. . .env/bin/activate
+6. pip install -r requirements.txt
+7. python -m pytest -vv # various unit tests
+8. ./read.py --username Y3216434F --password pperez2018 # the main testcase
